@@ -18,8 +18,12 @@ while true; do
     TOT_M=$(( TOTAL / 60 ))
     TOT_S=$(( TOTAL % 60 ))
     WAVEFORM=$(cat /tmp/waybar_cava_bars 2>/dev/null || echo "〜〜〜")
-    printf '{"text": "󰝚 %s - %s  %s", "tooltip": "%02d:%02d · %02d:%02d"}\n' \
-      "$ARTIST" "$TITLE" "$WAVEFORM" "$CUR_M" "$CUR_S" "$TOT_M" "$TOT_S"
+    LABEL="${ARTIST} - ${TITLE}"
+    if [ ${#LABEL} -gt 37 ]; then
+      LABEL="${LABEL:0:34}..."
+    fi
+    printf '{"text": "󰝚 %s  %s", "tooltip": "%02d:%02d · %02d:%02d"}\n' \
+      "$LABEL" "$WAVEFORM" "$CUR_M" "$CUR_S" "$TOT_M" "$TOT_S"
   else
     printf '{"text": "", "tooltip": ""}\n'
   fi
