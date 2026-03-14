@@ -10,7 +10,7 @@ source ~/.local/share/omarchy/default/bash/rc
 # Make an alias for invoking commands you use constantly
 # alias p='python'
 
-fastfetch --logo Arch2
+fastfetch --logo-type builtin --logo Locos
 export LIBVA_DRIVER_NAME=nvidia
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 eval "$(mise activate bash)"
