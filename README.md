@@ -22,6 +22,12 @@ Config for cava audio visualizer running in raw output mode, feeding the Waybar 
 - Custom keybindings
 - Hypridle screen timeout set to 2 hours (because I'm an adult)
 
+### UWSM
+Session-level environment variables for Hyprland (loaded before the compositor starts). Sets custom screenshot and screen recording paths, mise shim activation, and editor/terminal defaults.
+
+### Neovim
+Minimal config — Ruby LSP plugin for Rails work.
+
 ---
 
 ## Requirements
