@@ -16,5 +16,5 @@ export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 eval "$(mise activate bash)"
 
 export RAILS_ENV=development
-export OMARCHY_SCREENSHOT_DIR="$HOME/Media/Screenshots"
-export OMARCHY_SCREENRECORD_DIR="$HOME/Media/Recordings"
+export OMARCHY_SCREENSHOT_DIR="$HOME/FootageExtra/Screenshots"
+export OMARCHY_SCREENRECORD_DIR="$HOME/FootageExtra/Recordings"
